@@ -1,0 +1,301 @@
+/*
+Theme Name: Geo Intelligence
+Theme URI:
+Author: Fieldstone Media Group LLC
+Author URI:
+Description: The official website of Geo Intelligence.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+strong,b{font-weight: bold;}
+em,i{font-style: italic;}
+*{-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;}
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size:14px;
+	line-height:normal;
+	color: #333;
+	background-color: #262626;
+}
+a,button {
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+/*Main Styles*/
+#stage {
+	position: relative;
+	padding-top: 120px;
+}
+.rig {
+	position: relative;
+	max-width: 1024px;
+	width: 100%;
+	margin: 0 auto;
+}
+.nav li {
+	display: inline-block;
+	margin: 0 10px;
+}
+.nav li a {
+	font-size: 16px;
+	text-decoration: none;
+	color: #91278f;
+}
+.nav li a:hover {
+	color: #ffb500;
+}
+/*Header*/
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 120px;
+	padding: 10px 0;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.25);
+	z-index: 10;
+}
+.admin-bar .header {
+	top: 32px;
+}
+.header .logo {
+	float: left;
+	width: 240px;
+	height: 100px;
+	display: block;
+	background: url(images/geo-logo.png) center no-repeat;
+	background-size: 100% auto;
+}
+.header .nav {
+	float: right;
+	padding: 40px 0;
+}
+/*Acts*/
+.acts {
+	min-height: 420px;
+	padding: 60px 0 100px;
+	background-color: #fff;
+}
+.acts.parallax-window {	
+    background: transparent;
+}
+.acts .title {
+	font-size: 45px;
+	text-align: center;
+	padding-bottom: 10px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #404040;
+}
+.acts .note {
+	font-size: 16px;
+	padding-bottom: 50px;
+	font-weight: 400;
+	text-align: center;
+}
+#contact .title {
+	color: #fff;
+	text-shadow: 0 0 3px rgba(0,0,0,0.25);
+}
+.acts .copy {
+	max-width: 420px;
+	margin: 0 auto;
+	font-size: 16px;
+	text-align: left;
+}
+.acts .copy p {
+	margin-bottom: 30px;
+}
+.acts .copy .img {
+	width: 90%;
+	height: 240px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	background-color: #eee;
+	border-radius: 10px;
+	box-shadow: inset 0 0 5px rgba(0,0,0,0.15);
+}
+.acts .copy h3 {
+	position: relative;
+	font-size: 28px;
+	font-weight: 700;
+	color: #91278f;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+}
+.acts .copy h3:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -25%;
+	width: 50%;
+	height: 3px;
+	background-color: #ffce59;
+}
+.acts .copy span {
+	font-size: 14px;
+	color: #999;
+	display: block;
+	padding-bottom: 5px;
+}
+.acts .copy ul li {
+	display: inline-block;
+	font-size: 14px;
+	padding: 0 5px;
+}
+.acts .copy ul li a {
+	text-decoration: none;
+	color: #666;
+	font-weight: 700;
+}
+.acts .copy ul li a:hover {
+	border-bottom: 3px solid #333;
+}
+.acts .posts {
+	text-align: center;
+}
+.acts .posts .copy {
+	display: inline-block;
+	vertical-align: top;
+	/*width: 30%;*/
+	/*padding: 0 2%;*/
+	text-align: center;
+}
+.acts .posts.member .copy {
+	width: 24%;
+	padding: 0 1%;
+}
+.acts .posts.member .copy .img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+.acts .posts.member .copy h3 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+.acts .posts.member .copy span {
+	padding-bottom: 10px;
+}
+.acts .posts.work .copy {
+	width: 30%;
+	padding: 0 0 20px;
+	margin: 0 1%;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.25);
+}
+.acts .posts.work .copy .img {
+	box-shadow: none;
+	border-radius: 0;
+	width: 100%;
+}
+.acts .posts.work .copy p {
+	padding: 0 20px 0;
+}
+.acts .posts.work .copy h3 {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.acts .form {
+	max-width: 420px;
+	margin: 0 auto;
+}
+.acts .form .field {
+	margin-bottom: 10px;
+}
+.acts .form input,
+.acts .form textarea {
+	border: 1px solid #f1f1f1;
+	box-shadow: inset 0 0 3px rgba(0,0,0,0.25);
+	width: 100%;
+	height: 40px;
+	padding: 0 10px;
+	border-radius: 5px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #404040;
+}
+.acts .form textarea {
+	padding: 10px;
+	height: 200px;
+	max-width: 100%;
+	min-width: 100%;
+}
+.acts .form button {
+	display: block;
+	width: 250px;
+	height: 50px;	
+	margin: 0 auto;
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	line-height: 50px;
+	font-weight: 700;
+	color: #fff;
+	background-color: #91278f;
+	border: 1px solid #ae2dac;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	cursor: pointer;
+}
+.acts .form button:hover {
+	color: #ffb500;
+}
+.back .top {
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: -50%;
+	margin-left: -25px;
+	margin-top: -25px;
+	width: 50px;
+	height: 50px;
+	line-height: 45px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 40px;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-radius: 50%;
+	background-color: #ffb500;
+	box-shadow: 0 0 10px rgba(0,0,0,0.25);
+	color: #91278f;
+	z-index: 10;
+}
+/*Footer*/
+.footer {
+	position: relative;
+	background-color: #e1e1e1;
+	text-align: center;
+	box-shadow: 0 0 20px rgba(0,0,0,0.25);
+	border-top: 3px solid #91278f;
+	z-index: 5;
+}
+.footer .nav {
+	padding-bottom: 60px;
+}
+.footer .copy {
+	text-align: center;
+}
+/*Utility*/
+.hidetext{font-size:5%;text-indent:-9999em;text-align:left;color:transparent;white-space:nowrap;outline:none;}
+.clearfix:before,.clearfix:after{content:"\0020";display:block;height:0;overflow:hidden;}
+.clearfix:after{clear:both;}
+.clearfix{zoom:1;}
